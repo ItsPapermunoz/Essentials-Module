@@ -19,3 +19,14 @@ def cls():
 def pause():
     """This function pauses the program until the user presses enter key"""
     x = input("PRESS ENTER TO CONTINUE...")
+
+
+def confirm():
+    """This Function asks user for confirmation"""
+    confirmation = input("Do you wish to confirm? Y-N")
+    confirmation = confirmation.lower()
+    if confirmation == "y":
+        return True
+    else:
+        print("Confirmation Failed!")
+        return False
